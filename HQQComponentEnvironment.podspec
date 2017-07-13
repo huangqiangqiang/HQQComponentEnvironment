@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HQQComponentEnvironment'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of HQQComponentEnvironment.'
 
   s.description      = <<-DESC

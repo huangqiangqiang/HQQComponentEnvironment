@@ -1,0 +1,6 @@
+framework module HQQComponentEnvironment {
+  umbrella header "HQQComponentEnvironment-umbrella.h"
+
+  export *
+  module * { export * }
+}

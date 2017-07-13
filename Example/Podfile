@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HQQComponentEnvironment_Example' do
+  pod 'HQQComponentEnvironment', :path => '../'
+
+  target 'HQQComponentEnvironment_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

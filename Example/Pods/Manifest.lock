@@ -1,0 +1,16 @@
+PODS:
+  - HQQComponentEnvironment (0.1.0)
+
+DEPENDENCIES:
+  - HQQComponentEnvironment (from `../`)
+
+EXTERNAL SOURCES:
+  HQQComponentEnvironment:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HQQComponentEnvironment: c160e7206abf88c5bd1d8d236436f55795d4e694
+
+PODFILE CHECKSUM: c9f67fec055e4d7654f5ce337ca3d90695fcf653
+
+COCOAPODS: 1.2.0

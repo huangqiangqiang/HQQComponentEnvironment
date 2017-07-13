@@ -60,7 +60,7 @@ NSString *HQQEnvironmentCurrentURLKey = @"HQQEnvironmentCurrentURLKey";
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     // 提示
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"需要重启app才生效，点击确定退出app" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"环境切换成功" message:@"需要重启app才生效，点击确定退出app" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alert dismissViewControllerAnimated:YES completion:nil];
         exit(0);

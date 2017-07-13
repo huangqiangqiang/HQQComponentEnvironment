@@ -46,7 +46,7 @@ static char HQQEnvironmentProductionKeyAddress;
 
 + (void)show
 {
-    if (![objc_getAssociatedObject(self, &HQQEnvironmentDefaultKeyAddress) boolValue]) {
+    if (![objc_getAssociatedObject(self, &HQQEnvironmentProductionKeyAddress) boolValue]) {
         window_.hidden = NO;
     }
 }

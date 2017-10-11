@@ -15,4 +15,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
   s.source_files = 'HQQComponentEnvironment/Classes/**/*'
 
+  s.resource = "HQQComponentEnvironment/Assets/*.{strings,lproj,storyboard,xib,xcassets,json,imageset,png}"
+
 end

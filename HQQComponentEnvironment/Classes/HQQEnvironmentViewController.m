@@ -12,6 +12,11 @@
 NSString *HQQEnvironmentCurrentURLKey = @"HQQEnvironmentCurrentURLKey";
 
 @interface HQQEnvironmentViewController ()
+@property (nonatomic, strong) NSArray *titles;
+
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *appVersion;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *buildVersion;
+@property (unsafe_unretained, nonatomic) IBOutlet UISegmentedControl *environmentControl;
 
 @end
 
@@ -20,41 +25,40 @@ NSString *HQQEnvironmentCurrentURLKey = @"HQQEnvironmentCurrentURLKey";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    NSString *appVersion =[[[NSBundle mainBundle] infoDictionary]objectForKey:@"CFBundleShortVersionString"];
+    NSString *build =[[[NSBundle mainBundle] infoDictionary]objectForKey:@"CFBundleVersion"];
+    self.appVersion.text = [NSString stringWithFormat:@"%@:%@",@"APP版本",appVersion];
+    self.buildVersion.text = [NSString stringWithFormat:@"%@:%@",@"编译版本",build];
     
-    UIButton *back = [[UIButton alloc] init];
-    back.frame = CGRectMake(0, 0, 100, 44);
-    back.center = self.view.center;
-    [back setTitle:@"退出" forState:UIControlStateNormal];
-    [back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.view addSubview:back];
-    [back addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    // 之前选择的key
-    NSString *currentValue = [HQQEnvironmentManager currentEnvironment];
-    __block NSString *currentKey = nil;
-    [self.paramters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        if ([obj isEqualToString:currentValue]) {
-            currentKey = key;
-            *stop = YES;
-        }
-    }];
-    
-    UISegmentedControl *environmentControl = [[UISegmentedControl alloc] initWithItems:self.paramters.allKeys];
-    environmentControl.selectedSegmentIndex = [self.paramters.allKeys indexOfObject:currentKey];
-    environmentControl.center = CGPointMake(self.view.center.x, self.view.center.y - 100);
-    [environmentControl addTarget:self action:@selector(switchEnvironment:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:environmentControl];
+    [self setupSegmentControl];
 }
 
-- (void)backClick
+- (void)setupSegmentControl
 {
+    // 之前选择的key
+    self.titles = self.paramters.allKeys;
+    
+    // 动态添加segment
+    [self.environmentControl removeAllSegments];
+    int defIndex = 0;
+    for (int i = 0; i < self.titles.count; i++) {
+        NSString *key = self.titles[i];
+        NSString *value = self.paramters[key];
+        [self.environmentControl insertSegmentWithTitle:key atIndex:i animated:NO];
+        if ([value isEqualToString:[HQQEnvironmentManager currentEnvironment]]) {
+            defIndex = i;
+        }
+    }
+    
+    // 选中默认的环境
+    self.environmentControl.selectedSegmentIndex = defIndex;
+}
+
+- (IBAction)pop {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)switchEnvironment:(UISegmentedControl *)environmentControl
-{
+- (IBAction)switchEnvironment:(UISegmentedControl *)environmentControl {
     NSString *value = self.paramters[[environmentControl titleForSegmentAtIndex:environmentControl.selectedSegmentIndex]];
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:HQQEnvironmentCurrentURLKey];
     [[NSUserDefaults standardUserDefaults] synchronize];

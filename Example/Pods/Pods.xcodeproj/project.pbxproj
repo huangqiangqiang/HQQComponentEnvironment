@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F049251DD1960E0E3AB1C46433313E /* HQQEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EC50AF9F081D9DD474BA52D15EEF24 /* HQQEnvironmentViewController.m */; };
-		082F5E43EAEB1B36208A88F5E956F1F7 /* HQQEnvironmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2440540E26C031C5769A7FC7D05968DA /* HQQEnvironmentManager.m */; };
-		121CD6EA392EFF80E076D63C06714283 /* HQQComponentEnvironment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A06731941ED95E4F408D5D45CCF7CB1A /* HQQComponentEnvironment-dummy.m */; };
+		039E079E43C42E5E7F0E1DD553E0E757 /* HQQComponentEnvironment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DDA25821DE6078F01C74A97B0F1455 /* HQQComponentEnvironment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27AAF25F99BFAC7116888356AE7EF82D /* HQQEnvironmentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6D3BA27C238AD22697BD8F3770545F /* HQQEnvironmentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371894610BA3BDE1F13F386E7A760179 /* Pods-HQQComponentEnvironment_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E13DDC87441499904ED1276F927702 /* Pods-HQQComponentEnvironment_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A52B427503447728E72CF7E81F7766 /* Pods-HQQComponentEnvironment_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159813E9CEF7CF8F74820B3481EA338 /* Pods-HQQComponentEnvironment_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B66C466743FDCF750D6CF2496EA5365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8718C9CF8CD6EA0B9216FD9BAD1B565D /* HQQComponentEnvironment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 829659BE2A4B648E3702E69A286F6FB0 /* HQQComponentEnvironment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44CEE7B975E908A0B3B98D294A03C9CD /* HQQEnvironmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 465E7418C3CCED130BA22DCE1E1E6AC9 /* HQQEnvironmentManager.m */; };
+		7C7E0AC59F1762D9AE1CC0111AAB07D9 /* HQQComponentEnvironment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C430CF7E5E6FB317C05AD84E9AE2BC36 /* HQQComponentEnvironment-dummy.m */; };
 		8DE3AA3D70428E6C88F186019D5187A6 /* Pods-HQQComponentEnvironment_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DE57ADE5A3C9C42D785096EF27660 /* Pods-HQQComponentEnvironment_Example-dummy.m */; };
-		BB238BD389440931C8D19F7C3D5418DC /* HQQEnvironmentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 901C19488CC809EE532DC804DA648A03 /* HQQEnvironmentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934D9260085ABF37FD22C06C68F40D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A50372ED987B1D579FBA78549D027046 /* HQQEnvironmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77A82D77EAFC4485AE3182F132E82F9 /* HQQEnvironmentViewController.storyboard */; };
 		CCAF3F60847837C002EE973DF72023D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D37DFFDC51678E3EED1B41D972551EE3 /* HQQEnvironmentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587D3D60C9D296BE61C420E6BC51ADA /* HQQEnvironmentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9A4FF467EA29FED6F2F737C208BE438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E2EBEB075080A249E31BADE97EDFE540 /* Pods-HQQComponentEnvironment_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF197720B57E3450EA83C5440A2D90 /* Pods-HQQComponentEnvironment_Tests-dummy.m */; };
-		F23B7E9DFA118F324A736A55E3276080 /* HQQEnvironmentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 387A7EBBE7BE3984526079E8D88EAEC8 /* HQQEnvironmentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F292AADBE6905008245348DED1880FC5 /* HQQEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E93F0644E77794FF2B466C6F24C5B4 /* HQQEnvironmentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92E73510987818D6E54E7CEEBE20C4B1;
+			remoteGlobalIDString = 39408EB416FE01636415B6332257BFDC;
 			remoteInfo = HQQComponentEnvironment;
 		};
 /* End PBXContainerItemProxy section */
@@ -38,44 +39,45 @@
 		1593FE212CF3D9212EE4AD2906D5C6B4 /* Pods-HQQComponentEnvironment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HQQComponentEnvironment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		170E294C7275E431056E61C194072EC7 /* Pods_HQQComponentEnvironment_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HQQComponentEnvironment_Example.framework; path = "Pods-HQQComponentEnvironment_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C074E8AA322CAA566BD034A98265C3C /* Pods-HQQComponentEnvironment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HQQComponentEnvironment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2440540E26C031C5769A7FC7D05968DA /* HQQEnvironmentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQQEnvironmentManager.m; sourceTree = "<group>"; };
-		387A7EBBE7BE3984526079E8D88EAEC8 /* HQQEnvironmentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQQEnvironmentViewController.h; sourceTree = "<group>"; };
+		26DDA25821DE6078F01C74A97B0F1455 /* HQQComponentEnvironment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HQQComponentEnvironment-umbrella.h"; sourceTree = "<group>"; };
+		4587D3D60C9D296BE61C420E6BC51ADA /* HQQEnvironmentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQQEnvironmentManager.h; sourceTree = "<group>"; };
 		461058B8390B10AB3C64E657D275F753 /* HQQComponentEnvironment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HQQComponentEnvironment.framework; path = HQQComponentEnvironment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465E7418C3CCED130BA22DCE1E1E6AC9 /* HQQEnvironmentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQQEnvironmentManager.m; sourceTree = "<group>"; };
 		4D83A9A97DA95827288118858DF4B80E /* Pods-HQQComponentEnvironment_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HQQComponentEnvironment_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5F0609C033B15ABA0F7A8A888C00EC6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609A8890612130FF1674F43EAAFA194D /* HQQComponentEnvironment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HQQComponentEnvironment-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6619D1A7328FC8C734D37DF5009D2966 /* Pods-HQQComponentEnvironment_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HQQComponentEnvironment_Example-resources.sh"; sourceTree = "<group>"; };
+		6F6D3BA27C238AD22697BD8F3770545F /* HQQEnvironmentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQQEnvironmentViewController.h; sourceTree = "<group>"; };
 		8159813E9CEF7CF8F74820B3481EA338 /* Pods-HQQComponentEnvironment_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HQQComponentEnvironment_Tests-umbrella.h"; sourceTree = "<group>"; };
 		816DE57ADE5A3C9C42D785096EF27660 /* Pods-HQQComponentEnvironment_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HQQComponentEnvironment_Example-dummy.m"; sourceTree = "<group>"; };
 		8180A2D38821380DBCA282404DE54205 /* Pods-HQQComponentEnvironment_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HQQComponentEnvironment_Example.modulemap"; sourceTree = "<group>"; };
-		829659BE2A4B648E3702E69A286F6FB0 /* HQQComponentEnvironment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HQQComponentEnvironment-umbrella.h"; sourceTree = "<group>"; };
 		82CDDC5310902B4BDC34D7F3656BBA51 /* Pods-HQQComponentEnvironment_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HQQComponentEnvironment_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		86D19C6B60BB0DE4F2925C77DE2C292E /* Pods-HQQComponentEnvironment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HQQComponentEnvironment_Tests.modulemap"; sourceTree = "<group>"; };
-		890EFA3A29CA3EF75C78FF3A1FCEFD87 /* HQQComponentEnvironment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HQQComponentEnvironment-prefix.pch"; sourceTree = "<group>"; };
 		8A82A3C8560689C013AA2034071B44B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		901C19488CC809EE532DC804DA648A03 /* HQQEnvironmentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HQQEnvironmentManager.h; sourceTree = "<group>"; };
-		91AAA09E281DE1FAF1C377C43BD8BFDD /* HQQComponentEnvironment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HQQComponentEnvironment.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E49A84A9FFA97C2C44B777B9991C52D /* Pods-HQQComponentEnvironment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HQQComponentEnvironment_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A06731941ED95E4F408D5D45CCF7CB1A /* HQQComponentEnvironment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HQQComponentEnvironment-dummy.m"; sourceTree = "<group>"; };
+		A77A82D77EAFC4485AE3182F132E82F9 /* HQQEnvironmentViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = HQQEnvironmentViewController.storyboard; sourceTree = "<group>"; };
 		AB039D1435BA569066C8F4F42FD010DA /* Pods-HQQComponentEnvironment_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HQQComponentEnvironment_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B1168417364544AF014FA2E3E5924483 /* Pods-HQQComponentEnvironment_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HQQComponentEnvironment_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B2E93F0644E77794FF2B466C6F24C5B4 /* HQQEnvironmentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQQEnvironmentViewController.m; sourceTree = "<group>"; };
 		B331CB2BC8CDC3EAEC2E02255ACCC9F1 /* Pods-HQQComponentEnvironment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HQQComponentEnvironment_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3CC48B434A5E9866DEE51798D85D2DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7E13DDC87441499904ED1276F927702 /* Pods-HQQComponentEnvironment_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HQQComponentEnvironment_Example-umbrella.h"; sourceTree = "<group>"; };
-		C4EC50AF9F081D9DD474BA52D15EEF24 /* HQQEnvironmentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HQQEnvironmentViewController.m; sourceTree = "<group>"; };
+		BAC26519B06A1A5881A67AE3D3992724 /* HQQComponentEnvironment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HQQComponentEnvironment.modulemap; sourceTree = "<group>"; };
+		C430CF7E5E6FB317C05AD84E9AE2BC36 /* HQQComponentEnvironment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HQQComponentEnvironment-dummy.m"; sourceTree = "<group>"; };
 		D5A6494745D5169676146FD221ED8A3C /* Pods-HQQComponentEnvironment_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HQQComponentEnvironment_Tests-resources.sh"; sourceTree = "<group>"; };
 		DDDF197720B57E3450EA83C5440A2D90 /* Pods-HQQComponentEnvironment_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HQQComponentEnvironment_Tests-dummy.m"; sourceTree = "<group>"; };
-		E7095B463A68779F81EFEA274A94AE6E /* HQQComponentEnvironment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HQQComponentEnvironment.modulemap; sourceTree = "<group>"; };
+		EF5176AD3E2CF789AF252746253F2082 /* HQQComponentEnvironment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HQQComponentEnvironment.xcconfig; sourceTree = "<group>"; };
 		EFA335B2D7280D7DE4EDAC709F752749 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23620B680B247A5ED3043C81FD9FD71 /* Pods-HQQComponentEnvironment_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HQQComponentEnvironment_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C8390C663AEFD93E5D021CF9FC3C2D7 /* Frameworks */ = {
+		59C68D8B453ADD0BAEA850C7DD8CF3F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B66C466743FDCF750D6CF2496EA5365 /* Foundation.framework in Frameworks */,
+				934D9260085ABF37FD22C06C68F40D08 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,18 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6AC9EBE3705723F6D5F8707037F8E86A /* Support Files */ = {
+		7261A8CCD98A825E1BFF5549C6DEC397 /* HQQComponentEnvironment */ = {
 			isa = PBXGroup;
 			children = (
-				E7095B463A68779F81EFEA274A94AE6E /* HQQComponentEnvironment.modulemap */,
-				91AAA09E281DE1FAF1C377C43BD8BFDD /* HQQComponentEnvironment.xcconfig */,
-				A06731941ED95E4F408D5D45CCF7CB1A /* HQQComponentEnvironment-dummy.m */,
-				890EFA3A29CA3EF75C78FF3A1FCEFD87 /* HQQComponentEnvironment-prefix.pch */,
-				829659BE2A4B648E3702E69A286F6FB0 /* HQQComponentEnvironment-umbrella.h */,
-				5F0609C033B15ABA0F7A8A888C00EC6B /* Info.plist */,
+				C058EBF37890527F9E534436D303AFBF /* HQQComponentEnvironment */,
+				806C2B3F62BCF33D1EF10C2AA240E69B /* Resources */,
+				E91CC485089AEFD0C8FA1073E145D2FF /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HQQComponentEnvironment";
+			name = HQQComponentEnvironment;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7D052975CE3C9F9DB8D99D0116C13D51 /* Pods-HQQComponentEnvironment_Tests */ = {
@@ -134,11 +133,28 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				93F2DC519CBCD66C3DF079ED12452867 /* Development Pods */,
+				951A7C951F0388DB1E33E70EAADA0C47 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				EE3C29C19AC4BB57B24ADAA1F888EB2C /* Products */,
 				8CEE1A0E55DD66B4BC3821033ABF0416 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		806C2B3F62BCF33D1EF10C2AA240E69B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86021B7CB4C1F63B1B1408A61AA5829D /* HQQComponentEnvironment */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86021B7CB4C1F63B1B1408A61AA5829D /* HQQComponentEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				F517CB74C4BA11F83A40FFF9B5BBBB97 /* Assets */,
+			);
+			name = HQQComponentEnvironment;
+			path = HQQComponentEnvironment;
 			sourceTree = "<group>";
 		};
 		8CEE1A0E55DD66B4BC3821033ABF0416 /* Targets Support Files */ = {
@@ -150,24 +166,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		93F2DC519CBCD66C3DF079ED12452867 /* Development Pods */ = {
+		951A7C951F0388DB1E33E70EAADA0C47 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FE2BB2E727107002ABF0250B64A6B1F1 /* HQQComponentEnvironment */,
+				7261A8CCD98A825E1BFF5549C6DEC397 /* HQQComponentEnvironment */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B2487723B9A40561A85D92F2F7504F57 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				901C19488CC809EE532DC804DA648A03 /* HQQEnvironmentManager.h */,
-				2440540E26C031C5769A7FC7D05968DA /* HQQEnvironmentManager.m */,
-				387A7EBBE7BE3984526079E8D88EAEC8 /* HQQEnvironmentViewController.h */,
-				C4EC50AF9F081D9DD474BA52D15EEF24 /* HQQEnvironmentViewController.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		B3B92A5BAB510B653B53B016A4D39F01 /* Pods-HQQComponentEnvironment_Example */ = {
@@ -196,6 +200,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C058EBF37890527F9E534436D303AFBF /* HQQComponentEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				C12C750ABDFFB4C342B8A3EBEFCBAB5B /* Classes */,
+			);
+			name = HQQComponentEnvironment;
+			path = HQQComponentEnvironment;
+			sourceTree = "<group>";
+		};
+		C12C750ABDFFB4C342B8A3EBEFCBAB5B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4587D3D60C9D296BE61C420E6BC51ADA /* HQQEnvironmentManager.h */,
+				465E7418C3CCED130BA22DCE1E1E6AC9 /* HQQEnvironmentManager.m */,
+				6F6D3BA27C238AD22697BD8F3770545F /* HQQEnvironmentViewController.h */,
+				B2E93F0644E77794FF2B466C6F24C5B4 /* HQQEnvironmentViewController.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,13 +229,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E048784268AAD3C62E068A117FFE7BD6 /* HQQComponentEnvironment */ = {
+		E91CC485089AEFD0C8FA1073E145D2FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2487723B9A40561A85D92F2F7504F57 /* Classes */,
+				BAC26519B06A1A5881A67AE3D3992724 /* HQQComponentEnvironment.modulemap */,
+				EF5176AD3E2CF789AF252746253F2082 /* HQQComponentEnvironment.xcconfig */,
+				C430CF7E5E6FB317C05AD84E9AE2BC36 /* HQQComponentEnvironment-dummy.m */,
+				609A8890612130FF1674F43EAAFA194D /* HQQComponentEnvironment-prefix.pch */,
+				26DDA25821DE6078F01C74A97B0F1455 /* HQQComponentEnvironment-umbrella.h */,
+				B3CC48B434A5E9866DEE51798D85D2DC /* Info.plist */,
 			);
-			name = HQQComponentEnvironment;
-			path = HQQComponentEnvironment;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HQQComponentEnvironment";
 			sourceTree = "<group>";
 		};
 		EE3C29C19AC4BB57B24ADAA1F888EB2C /* Products */ = {
@@ -223,26 +253,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE2BB2E727107002ABF0250B64A6B1F1 /* HQQComponentEnvironment */ = {
+		F517CB74C4BA11F83A40FFF9B5BBBB97 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				E048784268AAD3C62E068A117FFE7BD6 /* HQQComponentEnvironment */,
-				6AC9EBE3705723F6D5F8707037F8E86A /* Support Files */,
+				A77A82D77EAFC4485AE3182F132E82F9 /* HQQEnvironmentViewController.storyboard */,
 			);
-			name = HQQComponentEnvironment;
-			path = ../..;
+			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BB3E4661E70C20FCF512BAFCC91F480 /* Headers */ = {
+		26A44EBAB2493FFCB72DB54185F3B3F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8718C9CF8CD6EA0B9216FD9BAD1B565D /* HQQComponentEnvironment-umbrella.h in Headers */,
-				BB238BD389440931C8D19F7C3D5418DC /* HQQEnvironmentManager.h in Headers */,
-				F23B7E9DFA118F324A736A55E3276080 /* HQQEnvironmentViewController.h in Headers */,
+				039E079E43C42E5E7F0E1DD553E0E757 /* HQQComponentEnvironment-umbrella.h in Headers */,
+				D37DFFDC51678E3EED1B41D972551EE3 /* HQQEnvironmentManager.h in Headers */,
+				27AAF25F99BFAC7116888356AE7EF82D /* HQQEnvironmentViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +311,14 @@
 			productReference = 0215A9BEA9239ED311DF5B094991F587 /* Pods_HQQComponentEnvironment_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		92E73510987818D6E54E7CEEBE20C4B1 /* HQQComponentEnvironment */ = {
+		39408EB416FE01636415B6332257BFDC /* HQQComponentEnvironment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9F7586D3450E0D1C8C757F539B8282F /* Build configuration list for PBXNativeTarget "HQQComponentEnvironment" */;
+			buildConfigurationList = 8C17237AED3F45C626E6B6AD0A583C4B /* Build configuration list for PBXNativeTarget "HQQComponentEnvironment" */;
 			buildPhases = (
-				7A35F9AAF2A4C6F9E9BF11634CD7E9F4 /* Sources */,
-				4C8390C663AEFD93E5D021CF9FC3C2D7 /* Frameworks */,
-				2BB3E4661E70C20FCF512BAFCC91F480 /* Headers */,
+				BCD0CD4690861AAEC024020EF9BF9AE8 /* Sources */,
+				59C68D8B453ADD0BAEA850C7DD8CF3F2 /* Frameworks */,
+				26A44EBAB2493FFCB72DB54185F3B3F9 /* Headers */,
+				A9539C98EB92B535F0C0D1D4988F0099 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -338,21 +368,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92E73510987818D6E54E7CEEBE20C4B1 /* HQQComponentEnvironment */,
+				39408EB416FE01636415B6332257BFDC /* HQQComponentEnvironment */,
 				9FB72F43C37DE5869AFDD9A99E39A8B3 /* Pods-HQQComponentEnvironment_Example */,
 				29114B2DBAAADF089DF68AB574E51A1B /* Pods-HQQComponentEnvironment_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A9539C98EB92B535F0C0D1D4988F0099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50372ED987B1D579FBA78549D027046 /* HQQEnvironmentViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7A35F9AAF2A4C6F9E9BF11634CD7E9F4 /* Sources */ = {
+		BCD0CD4690861AAEC024020EF9BF9AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121CD6EA392EFF80E076D63C06714283 /* HQQComponentEnvironment-dummy.m in Sources */,
-				082F5E43EAEB1B36208A88F5E956F1F7 /* HQQEnvironmentManager.m in Sources */,
-				00F049251DD1960E0E3AB1C46433313E /* HQQEnvironmentViewController.m in Sources */,
+				7C7E0AC59F1762D9AE1CC0111AAB07D9 /* HQQComponentEnvironment-dummy.m in Sources */,
+				44CEE7B975E908A0B3B98D294A03C9CD /* HQQEnvironmentManager.m in Sources */,
+				F292AADBE6905008245348DED1880FC5 /* HQQEnvironmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +419,7 @@
 		F5C0BDB89628BF60977EF37EBAA9B178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HQQComponentEnvironment;
-			target = 92E73510987818D6E54E7CEEBE20C4B1 /* HQQComponentEnvironment */;
+			target = 39408EB416FE01636415B6332257BFDC /* HQQComponentEnvironment */;
 			targetProxy = 9408DFA8630AB88DCFAB05203449BD31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,6 +509,38 @@
 			};
 			name = Debug;
 		};
+		49661B1DEC918FABEA4A974C9013B08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5176AD3E2CF789AF252746253F2082 /* HQQComponentEnvironment.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HQQComponentEnvironment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HQQComponentEnvironment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,70 +585,6 @@
 			};
 			name = Release;
 		};
-		99DB943B379D4091E6DDE851CEDE328C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91AAA09E281DE1FAF1C377C43BD8BFDD /* HQQComponentEnvironment.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HQQComponentEnvironment/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HQQComponentEnvironment;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A3A2BAEB89096B096B5A1F8B1F6846A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91AAA09E281DE1FAF1C377C43BD8BFDD /* HQQComponentEnvironment.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HQQComponentEnvironment/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HQQComponentEnvironment;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AC97BC6F7D587781C22C010C897A56C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B331CB2BC8CDC3EAEC2E02255ACCC9F1 /* Pods-HQQComponentEnvironment_Example.release.xcconfig */;
@@ -604,6 +613,38 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_HQQComponentEnvironment_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D25C53E00463072A6339319C1CF24160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5176AD3E2CF789AF252746253F2082 /* HQQComponentEnvironment.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HQQComponentEnvironment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HQQComponentEnvironment/HQQComponentEnvironment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HQQComponentEnvironment;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,11 +755,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9F7586D3450E0D1C8C757F539B8282F /* Build configuration list for PBXNativeTarget "HQQComponentEnvironment" */ = {
+		8C17237AED3F45C626E6B6AD0A583C4B /* Build configuration list for PBXNativeTarget "HQQComponentEnvironment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99DB943B379D4091E6DDE851CEDE328C /* Debug */,
-				A3A2BAEB89096B096B5A1F8B1F6846A7 /* Release */,
+				49661B1DEC918FABEA4A974C9013B08E /* Debug */,
+				D25C53E00463072A6339319C1CF24160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

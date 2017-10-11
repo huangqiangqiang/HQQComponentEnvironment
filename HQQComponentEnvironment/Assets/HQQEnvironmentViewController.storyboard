@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jLj-DJ-pNO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Environment View Controller-->
+        <scene sceneID="6si-BA-EWe">
+            <objects>
+                <viewController id="jLj-DJ-pNO" customClass="HQQEnvironmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D7e-7v-W9b"/>
+                        <viewControllerLayoutGuide type="bottom" id="5TB-NZ-x4A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vjp-EE-W4G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编译版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs8-HB-KRs">
+                                <rect key="frame" x="15" y="145" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-oK-kFP">
+                                <rect key="frame" x="15" y="50" width="345" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jKs-mM-6Mc"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchEnvironment:" destination="jLj-DJ-pNO" eventType="valueChanged" id="dHm-g8-P9Q"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-Lf-i4t">
+                                <rect key="frame" x="15" y="114" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTv-Ur-qVF">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03014565537" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZOd-Ur-WdG"/>
+                                </constraints>
+                                <state key="normal" title="退出">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pop" destination="jLj-DJ-pNO" eventType="touchUpInside" id="1cs-P8-b6g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QTv-Ur-qVF" firstAttribute="leading" secondItem="Vjp-EE-W4G" secondAttribute="leading" id="4za-f5-wOp"/>
+                            <constraint firstItem="dR1-Lf-i4t" firstAttribute="top" secondItem="Wjq-oK-kFP" secondAttribute="bottom" constant="20" id="6PC-ON-pY7"/>
+                            <constraint firstItem="Wjq-oK-kFP" firstAttribute="top" secondItem="D7e-7v-W9b" secondAttribute="bottom" constant="30" id="BTF-N5-ffL"/>
+                            <constraint firstItem="Wjq-oK-kFP" firstAttribute="leading" secondItem="Vjp-EE-W4G" secondAttribute="leading" constant="15" id="Cf7-xz-AXr"/>
+                            <constraint firstItem="rs8-HB-KRs" firstAttribute="leading" secondItem="Vjp-EE-W4G" secondAttribute="leading" constant="15" id="GvN-Kb-6Ew"/>
+                            <constraint firstAttribute="trailing" secondItem="Wjq-oK-kFP" secondAttribute="trailing" constant="15" id="Sac-AB-l0b"/>
+                            <constraint firstAttribute="trailing" secondItem="QTv-Ur-qVF" secondAttribute="trailing" id="UiT-ui-YvL"/>
+                            <constraint firstItem="rs8-HB-KRs" firstAttribute="top" secondItem="dR1-Lf-i4t" secondAttribute="bottom" constant="10" id="VMf-87-pC8"/>
+                            <constraint firstItem="dR1-Lf-i4t" firstAttribute="leading" secondItem="Vjp-EE-W4G" secondAttribute="leading" constant="15" id="iJs-Cc-Pds"/>
+                            <constraint firstItem="5TB-NZ-x4A" firstAttribute="top" secondItem="QTv-Ur-qVF" secondAttribute="bottom" id="uDl-oq-z2K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appVersion" destination="dR1-Lf-i4t" id="sxM-VA-eBq"/>
+                        <outlet property="buildVersion" destination="rs8-HB-KRs" id="an4-RI-V7Z"/>
+                        <outlet property="environmentControl" destination="Wjq-oK-kFP" id="YRg-w0-pbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kY-ev-vUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="347.67616191904051"/>
+        </scene>
+    </scenes>
+</document>

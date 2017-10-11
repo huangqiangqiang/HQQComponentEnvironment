@@ -39,7 +39,9 @@ static char HQQEnvironmentProductionKeyAddress;
 
 + (void)windowClick
 {
-    HQQEnvironmentViewController *vc = [[HQQEnvironmentViewController alloc] init];
+    NSBundle *bundle = [NSBundle bundleForClass:[HQQEnvironmentManager class]];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"HQQEnvironmentViewController" bundle:bundle];
+    HQQEnvironmentViewController *vc = [sb instantiateInitialViewController];
     vc.paramters = objc_getAssociatedObject(self, &HQQEnvironmentParamterAddress);
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:vc animated:YES completion:nil];
 }

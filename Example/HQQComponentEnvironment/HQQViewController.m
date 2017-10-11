@@ -7,6 +7,7 @@
 //
 
 #import "HQQViewController.h"
+#import <HQQComponentEnvironment/HQQEnvironmentManager.h>
 
 @interface HQQViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[HQQEnvironmentManager class]];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"HQQEnvironmentViewController" bundle:bundle];
+    NSURL *url = [bundle URLForResource:@"HQQEnvironmentViewController" withExtension:@"bundle"];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@",url);
 }
 
 - (void)didReceiveMemoryWarning

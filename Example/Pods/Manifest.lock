@@ -1,5 +1,5 @@
 PODS:
-  - HQQComponentEnvironment (0.1.0)
+  - HQQComponentEnvironment (1.0.1)
 
 DEPENDENCIES:
   - HQQComponentEnvironment (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HQQComponentEnvironment: c160e7206abf88c5bd1d8d236436f55795d4e694
+  HQQComponentEnvironment: 7b2ccf261cac712b99ac616cf52cbb35cc01c210
 
 PODFILE CHECKSUM: c9f67fec055e4d7654f5ce337ca3d90695fcf653
 
